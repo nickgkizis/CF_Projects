@@ -8,7 +8,7 @@ import java.io.IOException;
 public class CsvToJsonV3 {
     public static void main(String[] args) throws IOException {
         String line;
-        try (BufferedReader bf = new BufferedReader(new FileReader("C:/Users/nickg/OneDrive/Desktop/locations.txt"))) {
+        try (BufferedReader bf = new BufferedReader(new FileReader("locations.txt"))) {
             // Skip the first line (header)
             bf.readLine();
 

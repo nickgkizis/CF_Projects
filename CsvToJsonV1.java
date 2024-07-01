@@ -9,7 +9,7 @@ public class CsvToJsonV1 {
         String line;
         String[] linecities;
         String[] separatedcities;
-        try (BufferedReader bf = new BufferedReader(new FileReader("C:/Users/nickg/OneDrive/Desktop/locations.txt"))) {
+        try (BufferedReader bf = new BufferedReader(new FileReader("locations.txt"))) {
             while ((line = bf.readLine()) != null){
                 linecities = line.split("\n");
                 for (int i = 0; i < linecities.length;i++){

@@ -5,13 +5,19 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.*;
-
+/*
+The second version of the tokenizer uses
+regular expressions and lists in order to
+clean and split the text.
+The output is a list of tokens that will
+be added in a new file ("text_out.txt").
+ */
 public class TokenizerV2 {
     public static void main(String[] args) throws FileNotFoundException {
-        File fd = new File("C:/test1.txt");
+        File fd = new File("text_file.txt");
 //        Map<Integer, List<String>> tokensMap = new TreeMap<>();
         Map<Integer, Set<String>> tokensMap = new TreeMap<>();
-        PrintStream ps = new PrintStream(new FileOutputStream("C:/Users/nickg/OneDrive/Desktop/test1out.txt"), true);
+        PrintStream ps = new PrintStream(new FileOutputStream("text_out.txt"), true);
         System.out.println("How many letters; ");
 
         try (Scanner in2 = new Scanner(fd)) {
