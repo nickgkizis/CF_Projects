@@ -1,1 +1,1 @@
-Coding Factory projects, mainly JAVA
+Coding Factory elementary projects, mainly JAVA
